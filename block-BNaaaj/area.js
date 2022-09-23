@@ -1,13 +1,20 @@
-function arSquare(a){
+function square(a){
   var area=a*a;
   return area;
 }
-arSquare();
 
-function arRectangle(a,b){
+function rectangle(a,b){
   var area=a*b;
   return area;
 }
-arRectangle();
 
-module.exports=('index.js')
+function circle(r){
+  var area=3.14*r*r;
+  return area;
+}
+
+module.exports={
+  square:square,
+  rectangle:rectangle,
+  circle:circle,
+}
